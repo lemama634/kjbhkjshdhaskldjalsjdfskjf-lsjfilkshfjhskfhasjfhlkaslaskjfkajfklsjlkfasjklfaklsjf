@@ -29,16 +29,16 @@ local TextButton_19 = Instance.new("TextButton")
 local TextButton_20 = Instance.new("TextButton")
 local TextButton_21 = Instance.new("TextButton")
 local TextButton_22 = Instance.new("TextButton")
-local TextLabel_3 = Instance.new("TextLabel")
 local TextButton_23 = Instance.new("TextButton")
 local TextButton_24 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
 local TextButton_25 = Instance.new("TextButton")
 local TextButton_26 = Instance.new("TextButton")
 local TextButton_27 = Instance.new("TextButton")
 local TextButton_28 = Instance.new("TextButton")
-local TextLabel_4 = Instance.new("TextLabel")
 local TextButton_29 = Instance.new("TextButton")
 local TextButton_30 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
 local TextButton_31 = Instance.new("TextButton")
 local TextButton_32 = Instance.new("TextButton")
 local TextButton_33 = Instance.new("TextButton")
@@ -55,6 +55,8 @@ local TextButton_43 = Instance.new("TextButton")
 local TextButton_44 = Instance.new("TextButton")
 local TextButton_45 = Instance.new("TextButton")
 local TextButton_46 = Instance.new("TextButton")
+local TextButton_47 = Instance.new("TextButton")
+local TextButton_48 = Instance.new("TextButton")
 
 --Properties:
 
@@ -65,9 +67,8 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 5
-ScrollingFrame.Position = UDim2.new(0.0478468873, 0, -0.0168808512, 0)
-ScrollingFrame.Size = UDim2.new(0, 424, 0, 609)
-ScrollingFrame.CanvasPosition = Vector2.new(0, 21.4000244)
+ScrollingFrame.Position = UDim2.new(0.0649350658, 0, 0.0599908046, 0)
+ScrollingFrame.Size = UDim2.new(0, 424, 0, 525)
 
 TextLabel.Parent = ScrollingFrame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -334,6 +335,28 @@ TextButton_22.Text = "Notice all"
 TextButton_22.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_22.TextSize = 14.000
 
+TextButton_23.Parent = TextLabel_2
+TextButton_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_23.BorderSizePixel = 2
+TextButton_23.Position = UDim2.new(0.244917303, 0, 13.0482359, 0)
+TextButton_23.Size = UDim2.new(0, 117, 0, 46)
+TextButton_23.Font = Enum.Font.SourceSans
+TextButton_23.Text = "Explode all"
+TextButton_23.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_23.TextSize = 14.000
+
+TextButton_24.Parent = TextLabel_2
+TextButton_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_24.BorderSizePixel = 2
+TextButton_24.Position = UDim2.new(0.9049173, 0, 13.0482359, 0)
+TextButton_24.Size = UDim2.new(0, 117, 0, 46)
+TextButton_24.Font = Enum.Font.SourceSans
+TextButton_24.Text = "Alert all"
+TextButton_24.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_24.TextSize = 14.000
+
 TextLabel_3.Parent = TextLabel
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -345,36 +368,14 @@ TextLabel_3.Text = "Music"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextSize = 14.000
 
-TextButton_23.Parent = TextLabel_3
-TextButton_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_23.BorderSizePixel = 2
-TextButton_23.Position = UDim2.new(-0.45008269, 0, 1.19294012, 0)
-TextButton_23.Size = UDim2.new(0, 117, 0, 46)
-TextButton_23.Font = Enum.Font.SourceSans
-TextButton_23.Text = "Cool music"
-TextButton_23.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_23.TextSize = 14.000
-
-TextButton_24.Parent = TextLabel_3
-TextButton_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_24.BorderSizePixel = 2
-TextButton_24.Position = UDim2.new(0.284917295, 0, 1.17294073, 0)
-TextButton_24.Size = UDim2.new(0, 117, 0, 46)
-TextButton_24.Font = Enum.Font.SourceSans
-TextButton_24.Text = "LEL laugh"
-TextButton_24.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_24.TextSize = 14.000
-
 TextButton_25.Parent = TextLabel_3
 TextButton_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_25.BorderSizePixel = 2
-TextButton_25.Position = UDim2.new(0.934917271, 0, 1.17294073, 0)
+TextButton_25.Position = UDim2.new(-0.45008269, 0, 1.19294012, 0)
 TextButton_25.Size = UDim2.new(0, 117, 0, 46)
 TextButton_25.Font = Enum.Font.SourceSans
-TextButton_25.Text = "Jumpstyle"
+TextButton_25.Text = "Cool music"
 TextButton_25.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_25.TextSize = 14.000
 
@@ -382,10 +383,10 @@ TextButton_26.Parent = TextLabel_3
 TextButton_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_26.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_26.BorderSizePixel = 2
-TextButton_26.Position = UDim2.new(-0.45008269, 0, 2.47294068, 0)
+TextButton_26.Position = UDim2.new(0.284917295, 0, 1.17294073, 0)
 TextButton_26.Size = UDim2.new(0, 117, 0, 46)
 TextButton_26.Font = Enum.Font.SourceSans
-TextButton_26.Text = "Hardstyle"
+TextButton_26.Text = "LEL laugh"
 TextButton_26.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_26.TextSize = 14.000
 
@@ -393,10 +394,10 @@ TextButton_27.Parent = TextLabel_3
 TextButton_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_27.BorderSizePixel = 2
-TextButton_27.Position = UDim2.new(0.284917295, 0, 2.47294068, 0)
+TextButton_27.Position = UDim2.new(0.934917271, 0, 1.17294073, 0)
 TextButton_27.Size = UDim2.new(0, 117, 0, 46)
 TextButton_27.Font = Enum.Font.SourceSans
-TextButton_27.Text = "Jolly ahh"
+TextButton_27.Text = "Jumpstyle"
 TextButton_27.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_27.TextSize = 14.000
 
@@ -404,12 +405,34 @@ TextButton_28.Parent = TextLabel_3
 TextButton_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_28.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_28.BorderSizePixel = 2
-TextButton_28.Position = UDim2.new(0.934917271, 0, 2.47294068, 0)
+TextButton_28.Position = UDim2.new(-0.45008269, 0, 2.47294068, 0)
 TextButton_28.Size = UDim2.new(0, 117, 0, 46)
 TextButton_28.Font = Enum.Font.SourceSans
-TextButton_28.Text = "1 pound fish"
+TextButton_28.Text = "Hardstyle"
 TextButton_28.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_28.TextSize = 14.000
+
+TextButton_29.Parent = TextLabel_3
+TextButton_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_29.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_29.BorderSizePixel = 2
+TextButton_29.Position = UDim2.new(0.284917295, 0, 2.47294068, 0)
+TextButton_29.Size = UDim2.new(0, 117, 0, 46)
+TextButton_29.Font = Enum.Font.SourceSans
+TextButton_29.Text = "Jolly ahh"
+TextButton_29.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_29.TextSize = 14.000
+
+TextButton_30.Parent = TextLabel_3
+TextButton_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_30.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_30.BorderSizePixel = 2
+TextButton_30.Position = UDim2.new(0.934917271, 0, 2.47294068, 0)
+TextButton_30.Size = UDim2.new(0, 117, 0, 46)
+TextButton_30.Font = Enum.Font.SourceSans
+TextButton_30.Text = "1 pound fish"
+TextButton_30.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_30.TextSize = 14.000
 
 TextLabel_4.Parent = TextLabel
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -422,36 +445,14 @@ TextLabel_4.Text = "F3X abuser"
 TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_4.TextSize = 14.000
 
-TextButton_29.Parent = TextLabel_4
-TextButton_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_29.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_29.BorderSizePixel = 2
-TextButton_29.Position = UDim2.new(-0.545082688, 0, 1.27294064, 0)
-TextButton_29.Size = UDim2.new(0, 117, 0, 46)
-TextButton_29.Font = Enum.Font.SourceSans
-TextButton_29.Text = "Big head"
-TextButton_29.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_29.TextSize = 14.000
-
-TextButton_30.Parent = TextLabel_4
-TextButton_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_30.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_30.BorderSizePixel = 2
-TextButton_30.Position = UDim2.new(0.149917305, 0, 1.27294064, 0)
-TextButton_30.Size = UDim2.new(0, 117, 0, 46)
-TextButton_30.Font = Enum.Font.SourceSans
-TextButton_30.Text = "Bum all"
-TextButton_30.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_30.TextSize = 14.000
-
 TextButton_31.Parent = TextLabel_4
 TextButton_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_31.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_31.BorderSizePixel = 2
-TextButton_31.Position = UDim2.new(0.839917302, 0, 1.27294064, 0)
+TextButton_31.Position = UDim2.new(-0.545082688, 0, 1.27294064, 0)
 TextButton_31.Size = UDim2.new(0, 117, 0, 46)
 TextButton_31.Font = Enum.Font.SourceSans
-TextButton_31.Text = "Color all"
+TextButton_31.Text = "Big head"
 TextButton_31.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_31.TextSize = 14.000
 
@@ -459,10 +460,10 @@ TextButton_32.Parent = TextLabel_4
 TextButton_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_32.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_32.BorderSizePixel = 2
-TextButton_32.Position = UDim2.new(-0.545082688, 0, 2.47294068, 0)
+TextButton_32.Position = UDim2.new(0.149917305, 0, 1.27294064, 0)
 TextButton_32.Size = UDim2.new(0, 117, 0, 46)
 TextButton_32.Font = Enum.Font.SourceSans
-TextButton_32.Text = "Decal spam"
+TextButton_32.Text = "Bum all"
 TextButton_32.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_32.TextSize = 14.000
 
@@ -470,10 +471,10 @@ TextButton_33.Parent = TextLabel_4
 TextButton_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_33.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_33.BorderSizePixel = 2
-TextButton_33.Position = UDim2.new(0.149917305, 0, 2.47294068, 0)
+TextButton_33.Position = UDim2.new(0.839917302, 0, 1.27294064, 0)
 TextButton_33.Size = UDim2.new(0, 117, 0, 46)
 TextButton_33.Font = Enum.Font.SourceSans
-TextButton_33.Text = "Fire all"
+TextButton_33.Text = "Color all"
 TextButton_33.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_33.TextSize = 14.000
 
@@ -481,10 +482,10 @@ TextButton_34.Parent = TextLabel_4
 TextButton_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_34.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_34.BorderSizePixel = 2
-TextButton_34.Position = UDim2.new(0.839917302, 0, 2.47294068, 0)
+TextButton_34.Position = UDim2.new(-0.545082688, 0, 2.47294068, 0)
 TextButton_34.Size = UDim2.new(0, 117, 0, 46)
 TextButton_34.Font = Enum.Font.SourceSans
-TextButton_34.Text = "Rain toad"
+TextButton_34.Text = "Decal spam"
 TextButton_34.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_34.TextSize = 14.000
 
@@ -492,10 +493,10 @@ TextButton_35.Parent = TextLabel_4
 TextButton_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_35.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_35.BorderSizePixel = 2
-TextButton_35.Position = UDim2.new(-0.545082688, 0, 3.67294073, 0)
+TextButton_35.Position = UDim2.new(0.149917305, 0, 2.47294068, 0)
 TextButton_35.Size = UDim2.new(0, 117, 0, 46)
 TextButton_35.Font = Enum.Font.SourceSans
-TextButton_35.Text = "Become thomas"
+TextButton_35.Text = "Fire all"
 TextButton_35.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_35.TextSize = 14.000
 
@@ -503,10 +504,10 @@ TextButton_36.Parent = TextLabel_4
 TextButton_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_36.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_36.BorderSizePixel = 2
-TextButton_36.Position = UDim2.new(0.149917305, 0, 3.67294073, 0)
+TextButton_36.Position = UDim2.new(0.839917302, 0, 2.47294068, 0)
 TextButton_36.Size = UDim2.new(0, 117, 0, 46)
 TextButton_36.Font = Enum.Font.SourceSans
-TextButton_36.Text = "Unanchor"
+TextButton_36.Text = "Rain toad"
 TextButton_36.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_36.TextSize = 14.000
 
@@ -514,10 +515,10 @@ TextButton_37.Parent = TextLabel_4
 TextButton_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_37.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_37.BorderSizePixel = 2
-TextButton_37.Position = UDim2.new(0.839917302, 0, 3.67294073, 0)
+TextButton_37.Position = UDim2.new(-0.545082688, 0, 3.67294073, 0)
 TextButton_37.Size = UDim2.new(0, 117, 0, 46)
 TextButton_37.Font = Enum.Font.SourceSans
-TextButton_37.Text = "Create baseplate"
+TextButton_37.Text = "Become thomas"
 TextButton_37.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_37.TextSize = 14.000
 
@@ -525,10 +526,10 @@ TextButton_38.Parent = TextLabel_4
 TextButton_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_38.BorderSizePixel = 2
-TextButton_38.Position = UDim2.new(-0.545082688, 0, 4.87294054, 0)
+TextButton_38.Position = UDim2.new(0.149917305, 0, 3.67294073, 0)
 TextButton_38.Size = UDim2.new(0, 117, 0, 46)
 TextButton_38.Font = Enum.Font.SourceSans
-TextButton_38.Text = "Kill all"
+TextButton_38.Text = "Unanchor"
 TextButton_38.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_38.TextSize = 14.000
 
@@ -536,10 +537,10 @@ TextButton_39.Parent = TextLabel_4
 TextButton_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_39.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_39.BorderSizePixel = 2
-TextButton_39.Position = UDim2.new(0.149917305, 0, 4.87294054, 0)
+TextButton_39.Position = UDim2.new(0.839917302, 0, 3.67294073, 0)
 TextButton_39.Size = UDim2.new(0, 117, 0, 46)
 TextButton_39.Font = Enum.Font.SourceSans
-TextButton_39.Text = "Personality"
+TextButton_39.Text = "Create baseplate"
 TextButton_39.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_39.TextSize = 14.000
 
@@ -547,10 +548,10 @@ TextButton_40.Parent = TextLabel_4
 TextButton_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_40.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_40.BorderSizePixel = 2
-TextButton_40.Position = UDim2.new(0.839917302, 0, 4.87294054, 0)
+TextButton_40.Position = UDim2.new(-0.545082688, 0, 4.87294054, 0)
 TextButton_40.Size = UDim2.new(0, 117, 0, 46)
 TextButton_40.Font = Enum.Font.SourceSans
-TextButton_40.Text = "Skybox"
+TextButton_40.Text = "Kill all"
 TextButton_40.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_40.TextSize = 14.000
 
@@ -558,10 +559,10 @@ TextButton_41.Parent = TextLabel_4
 TextButton_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_41.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_41.BorderSizePixel = 2
-TextButton_41.Position = UDim2.new(-0.545082688, 0, 6.05294085, 0)
+TextButton_41.Position = UDim2.new(0.149917305, 0, 4.87294054, 0)
 TextButton_41.Size = UDim2.new(0, 117, 0, 46)
 TextButton_41.Font = Enum.Font.SourceSans
-TextButton_41.Text = "Peircer"
+TextButton_41.Text = "Personality"
 TextButton_41.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_41.TextSize = 14.000
 
@@ -569,10 +570,10 @@ TextButton_42.Parent = TextLabel_4
 TextButton_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_42.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_42.BorderSizePixel = 2
-TextButton_42.Position = UDim2.new(0.149917305, 0, 6.05294085, 0)
+TextButton_42.Position = UDim2.new(0.839917302, 0, 4.87294054, 0)
 TextButton_42.Size = UDim2.new(0, 117, 0, 46)
 TextButton_42.Font = Enum.Font.SourceSans
-TextButton_42.Text = "Stick all"
+TextButton_42.Text = "Skybox"
 TextButton_42.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_42.TextSize = 14.000
 
@@ -580,10 +581,10 @@ TextButton_43.Parent = TextLabel_4
 TextButton_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_43.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_43.BorderSizePixel = 2
-TextButton_43.Position = UDim2.new(0.839917302, 0, 6.05294085, 0)
+TextButton_43.Position = UDim2.new(-0.545082688, 0, 6.05294085, 0)
 TextButton_43.Size = UDim2.new(0, 117, 0, 46)
 TextButton_43.Font = Enum.Font.SourceSans
-TextButton_43.Text = "Twig all"
+TextButton_43.Text = "Peircer"
 TextButton_43.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_43.TextSize = 14.000
 
@@ -591,10 +592,10 @@ TextButton_44.Parent = TextLabel_4
 TextButton_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_44.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_44.BorderSizePixel = 2
-TextButton_44.Position = UDim2.new(-0.545082688, 0, 7.17294073, 0)
+TextButton_44.Position = UDim2.new(0.149917305, 0, 6.05294085, 0)
 TextButton_44.Size = UDim2.new(0, 117, 0, 46)
 TextButton_44.Font = Enum.Font.SourceSans
-TextButton_44.Text = "Duckify"
+TextButton_44.Text = "Stick all"
 TextButton_44.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_44.TextSize = 14.000
 
@@ -602,10 +603,10 @@ TextButton_45.Parent = TextLabel_4
 TextButton_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_45.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_45.BorderSizePixel = 2
-TextButton_45.Position = UDim2.new(0.149917305, 0, 7.17294073, 0)
+TextButton_45.Position = UDim2.new(0.839917302, 0, 6.05294085, 0)
 TextButton_45.Size = UDim2.new(0, 117, 0, 46)
 TextButton_45.Font = Enum.Font.SourceSans
-TextButton_45.Text = "Fire parts"
+TextButton_45.Text = "Twig all"
 TextButton_45.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_45.TextSize = 14.000
 
@@ -613,16 +614,38 @@ TextButton_46.Parent = TextLabel_4
 TextButton_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_46.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_46.BorderSizePixel = 2
-TextButton_46.Position = UDim2.new(0.839917302, 0, 7.17294073, 0)
+TextButton_46.Position = UDim2.new(-0.545082688, 0, 7.17294073, 0)
 TextButton_46.Size = UDim2.new(0, 117, 0, 46)
 TextButton_46.Font = Enum.Font.SourceSans
-TextButton_46.Text = "Luigi rain"
+TextButton_46.Text = "Duckify"
 TextButton_46.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_46.TextSize = 14.000
 
+TextButton_47.Parent = TextLabel_4
+TextButton_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_47.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_47.BorderSizePixel = 2
+TextButton_47.Position = UDim2.new(0.149917305, 0, 7.17294073, 0)
+TextButton_47.Size = UDim2.new(0, 117, 0, 46)
+TextButton_47.Font = Enum.Font.SourceSans
+TextButton_47.Text = "Fire parts"
+TextButton_47.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_47.TextSize = 14.000
+
+TextButton_48.Parent = TextLabel_4
+TextButton_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_48.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_48.BorderSizePixel = 2
+TextButton_48.Position = UDim2.new(0.839917302, 0, 7.17294073, 0)
+TextButton_48.Size = UDim2.new(0, 117, 0, 46)
+TextButton_48.Font = Enum.Font.SourceSans
+TextButton_48.Text = "Luigi rain"
+TextButton_48.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_48.TextSize = 14.000
+
 -- Scripts:
 
-local function IVRPCPE_fake_script() -- TextButton.LocalScript 
+local function KHRG_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -633,8 +656,8 @@ local function IVRPCPE_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IVRPCPE_fake_script)()
-local function STTUZPO_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(KHRG_fake_script)()
+local function KEZE_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -645,8 +668,8 @@ local function STTUZPO_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(STTUZPO_fake_script)()
-local function XXEEYU_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(KEZE_fake_script)()
+local function GAWG_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -657,8 +680,8 @@ local function XXEEYU_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XXEEYU_fake_script)()
-local function BNHST_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(GAWG_fake_script)()
+local function VMQUV_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -669,8 +692,8 @@ local function BNHST_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BNHST_fake_script)()
-local function UWQUI_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(VMQUV_fake_script)()
+local function EECKWYD_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -681,8 +704,8 @@ local function UWQUI_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UWQUI_fake_script)()
-local function VHUPI_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(EECKWYD_fake_script)()
+local function ZDGT_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -693,8 +716,8 @@ local function VHUPI_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VHUPI_fake_script)()
-local function ZLXZOS_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(ZDGT_fake_script)()
+local function GCCDV_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -708,8 +731,8 @@ local function ZLXZOS_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZLXZOS_fake_script)()
-local function MVWUJ_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(GCCDV_fake_script)()
+local function IEEZU_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -721,8 +744,8 @@ local function MVWUJ_fake_script() -- TextButton_4.LocalScript
 	end)
 	
 end
-coroutine.wrap(MVWUJ_fake_script)()
-local function UYWT_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(IEEZU_fake_script)()
+local function NDNZ_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -734,8 +757,8 @@ local function UYWT_fake_script() -- TextButton_4.LocalScript
 	end)
 	
 end
-coroutine.wrap(UYWT_fake_script)()
-local function IZTSOF_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(NDNZ_fake_script)()
+local function DLOODJJ_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -747,32 +770,32 @@ local function IZTSOF_fake_script() -- TextButton_4.LocalScript
 	end)
 	
 end
-coroutine.wrap(IZTSOF_fake_script)()
-local function PFVCQSM_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(DLOODJJ_fake_script)()
+local function UBHU_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";serverMessage Join OffizJSTeam today!")
 	end)
 end
-coroutine.wrap(PFVCQSM_fake_script)()
-local function QPWD_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(UBHU_fake_script)()
+local function MBBS_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":serverMessage Join OffizJSTeam today!")
 	end)
 end
-coroutine.wrap(QPWD_fake_script)()
-local function VNHYFOT_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(MBBS_fake_script)()
+local function PHCL_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";serverMessage Join OffizJSTeam today!")
 	end)
 end
-coroutine.wrap(VNHYFOT_fake_script)()
-local function WLYMCHQ_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(PHCL_fake_script)()
+local function WIJXFNJ_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -784,8 +807,8 @@ local function WLYMCHQ_fake_script() -- TextButton_6.LocalScript
 	end)
 	
 end
-coroutine.wrap(WLYMCHQ_fake_script)()
-local function KDPTMRG_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(WIJXFNJ_fake_script)()
+local function GOCBWXB_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -797,8 +820,8 @@ local function KDPTMRG_fake_script() -- TextButton_6.LocalScript
 	end)
 	
 end
-coroutine.wrap(KDPTMRG_fake_script)()
-local function PPOKRJ_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(GOCBWXB_fake_script)()
+local function YUGIR_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -810,56 +833,56 @@ local function PPOKRJ_fake_script() -- TextButton_6.LocalScript
 	end)
 	
 end
-coroutine.wrap(PPOKRJ_fake_script)()
-local function OJBGYW_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(YUGIR_fake_script)()
+local function PALVHU_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";ff")
 	end)
 end
-coroutine.wrap(OJBGYW_fake_script)()
-local function BGSJX_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(PALVHU_fake_script)()
+local function QHSRMX_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":ff")
 	end)
 end
-coroutine.wrap(BGSJX_fake_script)()
-local function FRGCL_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(QHSRMX_fake_script)()
+local function KNBJZE_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";ff")
 	end)
 end
-coroutine.wrap(FRGCL_fake_script)()
-local function FSIRXD_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(KNBJZE_fake_script)()
+local function TPEROB_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";re")
 	end)
 end
-coroutine.wrap(FSIRXD_fake_script)()
-local function PEJZVTH_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(TPEROB_fake_script)()
+local function NUMNO_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":re")
 	end)
 end
-coroutine.wrap(PEJZVTH_fake_script)()
-local function LKGTF_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(NUMNO_fake_script)()
+local function DMBYGU_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";re")
 	end)
 end
-coroutine.wrap(LKGTF_fake_script)()
-local function DEIOVT_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(DMBYGU_fake_script)()
+local function RKEEBZ_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -871,8 +894,8 @@ local function DEIOVT_fake_script() -- TextButton_9.LocalScript
 	end)
 	
 end
-coroutine.wrap(DEIOVT_fake_script)()
-local function UEMQJ_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(RKEEBZ_fake_script)()
+local function FHRQMBJ_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -884,8 +907,8 @@ local function UEMQJ_fake_script() -- TextButton_9.LocalScript
 	end)
 	
 end
-coroutine.wrap(UEMQJ_fake_script)()
-local function SOIEA_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(FHRQMBJ_fake_script)()
+local function IFQUBZX_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -897,8 +920,8 @@ local function SOIEA_fake_script() -- TextButton_9.LocalScript
 	end)
 	
 end
-coroutine.wrap(SOIEA_fake_script)()
-local function TDRRH_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(IFQUBZX_fake_script)()
+local function GPBNE_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -910,8 +933,8 @@ local function TDRRH_fake_script() -- TextButton_10.LocalScript
 	end)
 	
 end
-coroutine.wrap(TDRRH_fake_script)()
-local function MHYYOV_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(GPBNE_fake_script)()
+local function LRCCQ_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -923,8 +946,8 @@ local function MHYYOV_fake_script() -- TextButton_10.LocalScript
 	end)
 	
 end
-coroutine.wrap(MHYYOV_fake_script)()
-local function WNXOF_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(LRCCQ_fake_script)()
+local function UAUVZIV_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -936,8 +959,8 @@ local function WNXOF_fake_script() -- TextButton_10.LocalScript
 	end)
 	
 end
-coroutine.wrap(WNXOF_fake_script)()
-local function OOUWIY_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(UAUVZIV_fake_script)()
+local function CSBG_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -947,8 +970,8 @@ local function OOUWIY_fake_script() -- TextButton_11.LocalScript
 	end)
 	
 end
-coroutine.wrap(OOUWIY_fake_script)()
-local function GRSU_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(CSBG_fake_script)()
+local function DUQXEGE_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -958,8 +981,8 @@ local function GRSU_fake_script() -- TextButton_11.LocalScript
 	end)
 	
 end
-coroutine.wrap(GRSU_fake_script)()
-local function ZINW_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(DUQXEGE_fake_script)()
+local function AXWN_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -969,40 +992,40 @@ local function ZINW_fake_script() -- TextButton_11.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZINW_fake_script)()
-local function LGAOD_fake_script() -- TextButton_12.LocalScript 
+coroutine.wrap(AXWN_fake_script)()
+local function WIYXK_fake_script() -- TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_12)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";saveMAP")
 	end)
 end
-coroutine.wrap(LGAOD_fake_script)()
-local function YWRP_fake_script() -- TextButton_12.LocalScript 
+coroutine.wrap(WIYXK_fake_script)()
+local function FVUZFF_fake_script() -- TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_12)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";saveMAP")
 	end)
 end
-coroutine.wrap(YWRP_fake_script)()
-local function RFUAG_fake_script() -- TextButton_13.LocalScript 
+coroutine.wrap(FVUZFF_fake_script)()
+local function KRSUU_fake_script() -- TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_13)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";loadmap")
 	end)
 end
-coroutine.wrap(RFUAG_fake_script)()
-local function DQZBVUD_fake_script() -- TextButton_13.LocalScript 
+coroutine.wrap(KRSUU_fake_script)()
+local function BVHM_fake_script() -- TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_13)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";loadmap")
 	end)
 end
-coroutine.wrap(DQZBVUD_fake_script)()
-local function UJUS_fake_script() -- TextButton_14.LocalScript 
+coroutine.wrap(BVHM_fake_script)()
+local function ZZMX_fake_script() -- TextButton_14.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_14)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1014,8 +1037,8 @@ local function UJUS_fake_script() -- TextButton_14.LocalScript
 	end)
 	
 end
-coroutine.wrap(UJUS_fake_script)()
-local function NTZLTIT_fake_script() -- TextButton_14.LocalScript 
+coroutine.wrap(ZZMX_fake_script)()
+local function QLRIN_fake_script() -- TextButton_14.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_14)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1027,8 +1050,8 @@ local function NTZLTIT_fake_script() -- TextButton_14.LocalScript
 	end)
 	
 end
-coroutine.wrap(NTZLTIT_fake_script)()
-local function GHVZJG_fake_script() -- TextButton_14.LocalScript 
+coroutine.wrap(QLRIN_fake_script)()
+local function OPMT_fake_script() -- TextButton_14.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_14)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1040,24 +1063,24 @@ local function GHVZJG_fake_script() -- TextButton_14.LocalScript
 	end)
 	
 end
-coroutine.wrap(GHVZJG_fake_script)()
-local function TZNQN_fake_script() -- TextButton_15.LocalScript 
+coroutine.wrap(OPMT_fake_script)()
+local function QQSYZ_fake_script() -- TextButton_15.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_15)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";buildingTools")
 	end)
 end
-coroutine.wrap(TZNQN_fake_script)()
-local function DMCW_fake_script() -- TextButton_15.LocalScript 
+coroutine.wrap(QQSYZ_fake_script)()
+local function WPSW_fake_script() -- TextButton_15.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_15)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";buildingTools")
 	end)
 end
-coroutine.wrap(DMCW_fake_script)()
-local function NHXM_fake_script() -- TextButton_16.LocalScript 
+coroutine.wrap(WPSW_fake_script)()
+local function VMUSBCR_fake_script() -- TextButton_16.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_16)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1069,8 +1092,8 @@ local function NHXM_fake_script() -- TextButton_16.LocalScript
 	end)
 	
 end
-coroutine.wrap(NHXM_fake_script)()
-local function YGZHGO_fake_script() -- TextButton_16.LocalScript 
+coroutine.wrap(VMUSBCR_fake_script)()
+local function PLJC_fake_script() -- TextButton_16.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_16)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1082,8 +1105,8 @@ local function YGZHGO_fake_script() -- TextButton_16.LocalScript
 	end)
 	
 end
-coroutine.wrap(YGZHGO_fake_script)()
-local function DMDEZGX_fake_script() -- TextButton_16.LocalScript 
+coroutine.wrap(PLJC_fake_script)()
+local function EWWEHMJ_fake_script() -- TextButton_16.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_16)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1095,56 +1118,56 @@ local function DMDEZGX_fake_script() -- TextButton_16.LocalScript
 	end)
 	
 end
-coroutine.wrap(DMDEZGX_fake_script)()
-local function AYTYVIH_fake_script() -- TextButton_17.LocalScript 
+coroutine.wrap(EWWEHMJ_fake_script)()
+local function SXCEHVE_fake_script() -- TextButton_17.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_17)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";disco")
 	end)
 end
-coroutine.wrap(AYTYVIH_fake_script)()
-local function WIDWT_fake_script() -- TextButton_17.LocalScript 
+coroutine.wrap(SXCEHVE_fake_script)()
+local function MAQG_fake_script() -- TextButton_17.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_17)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";disco")
 	end)
 end
-coroutine.wrap(WIDWT_fake_script)()
-local function WLAQUZ_fake_script() -- TextButton_17.LocalScript 
+coroutine.wrap(MAQG_fake_script)()
+local function EFZRM_fake_script() -- TextButton_17.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_17)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":disco")
 	end)
 end
-coroutine.wrap(WLAQUZ_fake_script)()
-local function DIGFFE_fake_script() -- TextButton_18.LocalScript 
+coroutine.wrap(EFZRM_fake_script)()
+local function RODLHO_fake_script() -- TextButton_18.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_18)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":fog")
 	end)
 end
-coroutine.wrap(DIGFFE_fake_script)()
-local function RIEC_fake_script() -- TextButton_18.LocalScript 
+coroutine.wrap(RODLHO_fake_script)()
+local function RRFAL_fake_script() -- TextButton_18.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_18)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";fog")
 	end)
 end
-coroutine.wrap(RIEC_fake_script)()
-local function CCLFXR_fake_script() -- TextButton_18.LocalScript 
+coroutine.wrap(RRFAL_fake_script)()
+local function QRGU_fake_script() -- TextButton_18.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_18)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";fog")
 	end)
 end
-coroutine.wrap(CCLFXR_fake_script)()
-local function RIHEUIR_fake_script() -- TextButton_19.LocalScript 
+coroutine.wrap(QRGU_fake_script)()
+local function EGBV_fake_script() -- TextButton_19.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_19)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1156,8 +1179,8 @@ local function RIHEUIR_fake_script() -- TextButton_19.LocalScript
 	end)
 	
 end
-coroutine.wrap(RIHEUIR_fake_script)()
-local function GKLBDE_fake_script() -- TextButton_20.LocalScript 
+coroutine.wrap(EGBV_fake_script)()
+local function ZJJST_fake_script() -- TextButton_20.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_20)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1168,8 +1191,8 @@ local function GKLBDE_fake_script() -- TextButton_20.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GKLBDE_fake_script)()
-local function VPVJQFC_fake_script() -- TextButton_20.LocalScript 
+coroutine.wrap(ZJJST_fake_script)()
+local function IQTUOC_fake_script() -- TextButton_20.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_20)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1180,8 +1203,8 @@ local function VPVJQFC_fake_script() -- TextButton_20.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VPVJQFC_fake_script)()
-local function OCEXNVC_fake_script() -- TextButton_20.LocalScript 
+coroutine.wrap(IQTUOC_fake_script)()
+local function NKLO_fake_script() -- TextButton_20.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_20)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1192,8 +1215,8 @@ local function OCEXNVC_fake_script() -- TextButton_20.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OCEXNVC_fake_script)()
-local function TAMVMX_fake_script() -- TextButton_21.LocalScript 
+coroutine.wrap(NKLO_fake_script)()
+local function KSVU_fake_script() -- TextButton_21.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_21)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1204,8 +1227,8 @@ local function TAMVMX_fake_script() -- TextButton_21.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TAMVMX_fake_script)()
-local function RNSLBYG_fake_script() -- TextButton_21.LocalScript 
+coroutine.wrap(KSVU_fake_script)()
+local function FNGDUUW_fake_script() -- TextButton_21.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_21)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1216,8 +1239,8 @@ local function RNSLBYG_fake_script() -- TextButton_21.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RNSLBYG_fake_script)()
-local function WZLK_fake_script() -- TextButton_21.LocalScript 
+coroutine.wrap(FNGDUUW_fake_script)()
+local function NAKAZY_fake_script() -- TextButton_21.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_21)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1228,8 +1251,8 @@ local function WZLK_fake_script() -- TextButton_21.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WZLK_fake_script)()
-local function UTAN_fake_script() -- TextButton_22.LocalScript 
+coroutine.wrap(NAKAZY_fake_script)()
+local function NPBND_fake_script() -- TextButton_22.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_22)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1240,8 +1263,8 @@ local function UTAN_fake_script() -- TextButton_22.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UTAN_fake_script)()
-local function KKFSVG_fake_script() -- TextButton_22.LocalScript 
+coroutine.wrap(NPBND_fake_script)()
+local function VIXTL_fake_script() -- TextButton_22.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_22)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1252,8 +1275,8 @@ local function KKFSVG_fake_script() -- TextButton_22.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KKFSVG_fake_script)()
-local function YKLWZ_fake_script() -- TextButton_22.LocalScript 
+coroutine.wrap(VIXTL_fake_script)()
+local function JIGOC_fake_script() -- TextButton_22.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_22)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1264,153 +1287,213 @@ local function YKLWZ_fake_script() -- TextButton_22.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YKLWZ_fake_script)()
-local function PZVVL_fake_script() -- TextButton_23.LocalScript 
+coroutine.wrap(JIGOC_fake_script)()
+local function CMUD_fake_script() -- TextButton_23.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_23)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local players = game:GetService("Players")
+	
+		for _, player in ipairs(players:GetPlayers()) do
+			game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";chat " .. player.Name .. " Join OffizJSTeam today!")
+		end
+	end)
+end
+coroutine.wrap(CMUD_fake_script)()
+local function ZAVCN_fake_script() -- TextButton_23.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_23)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local players = game:GetService("Players")
+	
+		for _, player in ipairs(players:GetPlayers()) do
+			game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";chat " .. player.Name .. " Join OffizJSTeam today!")
+		end
+	end)
+end
+coroutine.wrap(ZAVCN_fake_script)()
+local function DMXZOQX_fake_script() -- TextButton_24.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_24)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local players = game:GetService("Players")
+	
+		for _, player in ipairs(players:GetPlayers()) do
+			game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";alert " .. player.Name .. " Join OffizJSTeam today!")
+		end
+	end)
+end
+coroutine.wrap(DMXZOQX_fake_script)()
+local function MYFQER_fake_script() -- TextButton_24.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_24)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local players = game:GetService("Players")
+	
+		for _, player in ipairs(players:GetPlayers()) do
+			game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":alert " .. player.Name .. " Join OffizJSTeam today!")
+		end
+	end)
+end
+coroutine.wrap(MYFQER_fake_script)()
+local function YXRZNZD_fake_script() -- TextButton_24.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_24)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local players = game:GetService("Players")
+	
+		for _, player in ipairs(players:GetPlayers()) do
+			game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";alert " .. player.Name .. " Join OffizJSTeam today!")
+		end
+	end)
+end
+coroutine.wrap(YXRZNZD_fake_script)()
+local function TKPMVAE_fake_script() -- TextButton_25.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_25)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":music 17422156627")
 	end)
 end
-coroutine.wrap(PZVVL_fake_script)()
-local function UTYU_fake_script() -- TextButton_23.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_23)
+coroutine.wrap(TKPMVAE_fake_script)()
+local function NEOJBZ_fake_script() -- TextButton_25.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_25)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";music 17422156627")
 	end)
 end
-coroutine.wrap(UTYU_fake_script)()
-local function OGNDX_fake_script() -- TextButton_23.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_23)
+coroutine.wrap(NEOJBZ_fake_script)()
+local function IFSNLLL_fake_script() -- TextButton_25.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_25)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";music 17422156627")
 	end)
 end
-coroutine.wrap(OGNDX_fake_script)()
-local function OALJX_fake_script() -- TextButton_24.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_24)
+coroutine.wrap(IFSNLLL_fake_script)()
+local function JPVLTZT_fake_script() -- TextButton_26.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_26)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";music 4767799547")
 	end)
 end
-coroutine.wrap(OALJX_fake_script)()
-local function RBUZN_fake_script() -- TextButton_24.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_24)
+coroutine.wrap(JPVLTZT_fake_script)()
+local function QPGBYKC_fake_script() -- TextButton_26.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_26)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";music 4767799547")
 	end)
 end
-coroutine.wrap(RBUZN_fake_script)()
-local function EHIGZWE_fake_script() -- TextButton_24.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_24)
+coroutine.wrap(QPGBYKC_fake_script)()
+local function BRUIF_fake_script() -- TextButton_26.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_26)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":music 4767799547")
 	end)
 end
-coroutine.wrap(EHIGZWE_fake_script)()
-local function BEZIV_fake_script() -- TextButton_25.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_25)
+coroutine.wrap(BRUIF_fake_script)()
+local function VSCVM_fake_script() -- TextButton_27.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_27)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":music 104879348278763")
 	end)
 end
-coroutine.wrap(BEZIV_fake_script)()
-local function MRJQQTJ_fake_script() -- TextButton_25.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_25)
+coroutine.wrap(VSCVM_fake_script)()
+local function QOINDUG_fake_script() -- TextButton_27.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_27)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";music 104879348278763")
 	end)
 end
-coroutine.wrap(MRJQQTJ_fake_script)()
-local function FVJBM_fake_script() -- TextButton_25.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_25)
+coroutine.wrap(QOINDUG_fake_script)()
+local function JVDM_fake_script() -- TextButton_27.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_27)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";music 104879348278763")
 	end)
 end
-coroutine.wrap(FVJBM_fake_script)()
-local function VMKSI_fake_script() -- TextButton_26.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_26)
+coroutine.wrap(JVDM_fake_script)()
+local function LJLYYPP_fake_script() -- TextButton_28.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_28)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";music 102693468291710")
 	end)
 end
-coroutine.wrap(VMKSI_fake_script)()
-local function QPER_fake_script() -- TextButton_26.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_26)
+coroutine.wrap(LJLYYPP_fake_script)()
+local function KYNY_fake_script() -- TextButton_28.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_28)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";music 102693468291710")
 	end)
 end
-coroutine.wrap(QPER_fake_script)()
-local function VAPS_fake_script() -- TextButton_26.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_26)
+coroutine.wrap(KYNY_fake_script)()
+local function ITYZL_fake_script() -- TextButton_28.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_28)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":music 102693468291710")
 	end)
 end
-coroutine.wrap(VAPS_fake_script)()
-local function DBSHD_fake_script() -- TextButton_27.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_27)
+coroutine.wrap(ITYZL_fake_script)()
+local function WJOUEO_fake_script() -- TextButton_29.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_29)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":music 74408681179515")
 	end)
 end
-coroutine.wrap(DBSHD_fake_script)()
-local function DVEBUF_fake_script() -- TextButton_27.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_27)
+coroutine.wrap(WJOUEO_fake_script)()
+local function HRPG_fake_script() -- TextButton_29.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_29)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";music 74408681179515")
 	end)
 end
-coroutine.wrap(DVEBUF_fake_script)()
-local function FPJHK_fake_script() -- TextButton_27.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_27)
+coroutine.wrap(HRPG_fake_script)()
+local function XRBI_fake_script() -- TextButton_29.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_29)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";music 74408681179515")
 	end)
 end
-coroutine.wrap(FPJHK_fake_script)()
-local function MXQXZYV_fake_script() -- TextButton_28.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_28)
+coroutine.wrap(XRBI_fake_script)()
+local function DISSJ_fake_script() -- TextButton_30.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_30)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";music 93277390339796")
 	end)
 end
-coroutine.wrap(MXQXZYV_fake_script)()
-local function JGOZQB_fake_script() -- TextButton_28.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_28)
+coroutine.wrap(DISSJ_fake_script)()
+local function DEQDN_fake_script() -- TextButton_30.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_30)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(":music 93277390339796")
 	end)
 end
-coroutine.wrap(JGOZQB_fake_script)()
-local function DAMX_fake_script() -- TextButton_28.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_28)
+coroutine.wrap(DEQDN_fake_script)()
+local function OBPNO_fake_script() -- TextButton_30.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_30)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").HDAdminHDClient.Signals.RequestCommand:InvokeServer(";music 93277390339796")
 	end)
 end
-coroutine.wrap(DAMX_fake_script)()
-local function CDEZN_fake_script() -- TextButton_29.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_29)
+coroutine.wrap(OBPNO_fake_script)()
+local function CJBDRZ_fake_script() -- TextButton_31.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_31)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -1629,9 +1712,9 @@ local function CDEZN_fake_script() -- TextButton_29.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CDEZN_fake_script)()
-local function BFXGQJQ_fake_script() -- TextButton_30.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_30)
+coroutine.wrap(CJBDRZ_fake_script)()
+local function YLITJVU_fake_script() -- TextButton_32.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_32)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -1916,9 +1999,9 @@ local function BFXGQJQ_fake_script() -- TextButton_30.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BFXGQJQ_fake_script)()
-local function XCKT_fake_script() -- TextButton_31.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_31)
+coroutine.wrap(YLITJVU_fake_script)()
+local function AFJT_fake_script() -- TextButton_33.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_33)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		--rgrg
@@ -2156,9 +2239,9 @@ local function XCKT_fake_script() -- TextButton_31.LocalScript
 	end)
 	
 end
-coroutine.wrap(XCKT_fake_script)()
-local function JEARTRZ_fake_script() -- TextButton_32.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_32)
+coroutine.wrap(AFJT_fake_script)()
+local function RSQQ_fake_script() -- TextButton_34.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_34)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		--rgrg
@@ -2436,9 +2519,9 @@ local function JEARTRZ_fake_script() -- TextButton_32.LocalScript
 		spam("77869853802996")
 	end)
 end
-coroutine.wrap(JEARTRZ_fake_script)()
-local function NETBPU_fake_script() -- TextButton_33.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_33)
+coroutine.wrap(RSQQ_fake_script)()
+local function DOPFRJ_fake_script() -- TextButton_35.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_35)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		--rgrg
@@ -2676,9 +2759,9 @@ local function NETBPU_fake_script() -- TextButton_33.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NETBPU_fake_script)()
-local function HUYYMRV_fake_script() -- TextButton_34.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_34)
+coroutine.wrap(DOPFRJ_fake_script)()
+local function SDYOW_fake_script() -- TextButton_36.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_36)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		--rgrg
@@ -2854,9 +2937,9 @@ local function HUYYMRV_fake_script() -- TextButton_34.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HUYYMRV_fake_script)()
-local function YATZ_fake_script() -- TextButton_35.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_35)
+coroutine.wrap(SDYOW_fake_script)()
+local function RQQR_fake_script() -- TextButton_37.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_37)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -3097,9 +3180,9 @@ local function YATZ_fake_script() -- TextButton_35.LocalScript
 	
 	end)
 end
-coroutine.wrap(YATZ_fake_script)()
-local function DEFO_fake_script() -- TextButton_36.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_36)
+coroutine.wrap(RQQR_fake_script)()
+local function LDMNFWC_fake_script() -- TextButton_38.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_38)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -3319,9 +3402,9 @@ local function DEFO_fake_script() -- TextButton_36.LocalScript
 	end)
 	
 end
-coroutine.wrap(DEFO_fake_script)()
-local function LETYZ_fake_script() -- TextButton_37.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_37)
+coroutine.wrap(LDMNFWC_fake_script)()
+local function UMEWH_fake_script() -- TextButton_39.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_39)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -3575,9 +3658,9 @@ local function LETYZ_fake_script() -- TextButton_37.LocalScript
 		SpawnBasePlate()
 	end)
 end
-coroutine.wrap(LETYZ_fake_script)()
-local function PQKP_fake_script() -- TextButton_38.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_38)
+coroutine.wrap(UMEWH_fake_script)()
+local function VWHOZ_fake_script() -- TextButton_40.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_40)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -3795,9 +3878,9 @@ local function PQKP_fake_script() -- TextButton_38.LocalScript
 		KillAll()
 	end)
 end
-coroutine.wrap(PQKP_fake_script)()
-local function BGFAP_fake_script() -- TextButton_39.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_39)
+coroutine.wrap(VWHOZ_fake_script)()
+local function NYEAQ_fake_script() -- TextButton_41.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_41)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -4085,9 +4168,9 @@ local function BGFAP_fake_script() -- TextButton_39.LocalScript
 	
 	end)
 end
-coroutine.wrap(BGFAP_fake_script)()
-local function WSZDZT_fake_script() -- TextButton_40.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_40)
+coroutine.wrap(NYEAQ_fake_script)()
+local function AUMOFC_fake_script() -- TextButton_42.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_42)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		--rgrg
@@ -4360,9 +4443,9 @@ local function WSZDZT_fake_script() -- TextButton_40.LocalScript
 	
 	end)
 end
-coroutine.wrap(WSZDZT_fake_script)()
-local function EJWHVRK_fake_script() -- TextButton_41.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_41)
+coroutine.wrap(AUMOFC_fake_script)()
+local function DTQZ_fake_script() -- TextButton_43.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_43)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -4677,9 +4760,9 @@ local function EJWHVRK_fake_script() -- TextButton_41.LocalScript
 	
 	end)
 end
-coroutine.wrap(EJWHVRK_fake_script)()
-local function SYQNF_fake_script() -- TextButton_42.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_42)
+coroutine.wrap(DTQZ_fake_script)()
+local function DBOEQVQ_fake_script() -- TextButton_44.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_44)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -4911,9 +4994,9 @@ local function SYQNF_fake_script() -- TextButton_42.LocalScript
 		Stickify()
 	end)
 end
-coroutine.wrap(SYQNF_fake_script)()
-local function UQBTUJY_fake_script() -- TextButton_43.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_43)
+coroutine.wrap(DBOEQVQ_fake_script)()
+local function INSQJN_fake_script() -- TextButton_45.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_45)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -5149,9 +5232,9 @@ local function UQBTUJY_fake_script() -- TextButton_43.LocalScript
 	
 	end)
 end
-coroutine.wrap(UQBTUJY_fake_script)()
-local function PGSW_fake_script() -- TextButton_44.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_44)
+coroutine.wrap(INSQJN_fake_script)()
+local function YSRIT_fake_script() -- TextButton_46.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_46)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		--rgrg
@@ -5397,9 +5480,9 @@ local function PGSW_fake_script() -- TextButton_44.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PGSW_fake_script)()
-local function SRHAB_fake_script() -- TextButton_45.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_45)
+coroutine.wrap(YSRIT_fake_script)()
+local function UDZGQQF_fake_script() -- TextButton_47.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_47)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		local player = game.Players.LocalPlayer
@@ -5629,9 +5712,9 @@ local function SRHAB_fake_script() -- TextButton_45.LocalScript
 	
 	end)
 end
-coroutine.wrap(SRHAB_fake_script)()
-local function LQQGM_fake_script() -- TextButton_46.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_46)
+coroutine.wrap(UDZGQQF_fake_script)()
+local function YIHWXG_fake_script() -- TextButton_48.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_48)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		--rgrg
@@ -5807,8 +5890,8 @@ local function LQQGM_fake_script() -- TextButton_46.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LQQGM_fake_script)()
-local function OIASTA_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(YIHWXG_fake_script)()
+local function OTHLFV_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -5846,8 +5929,8 @@ local function OIASTA_fake_script() -- ScrollingFrame.LocalScript
 	end)
 	
 end
-coroutine.wrap(OIASTA_fake_script)()
-local function NEKPF_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(OTHLFV_fake_script)()
+local function LVJMVBN_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local player = game.Players.LocalPlayer
@@ -5856,4 +5939,4 @@ local function NEKPF_fake_script() -- ScreenGui.LocalScript
 	screenGui.ResetOnSpawn = false
 	
 end
-coroutine.wrap(NEKPF_fake_script)()
+coroutine.wrap(LVJMVBN_fake_script)()
