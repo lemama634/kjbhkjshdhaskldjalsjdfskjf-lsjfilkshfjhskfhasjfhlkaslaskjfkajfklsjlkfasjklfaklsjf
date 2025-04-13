@@ -896,7 +896,7 @@ local function SFICGCC_fake_script() -- TextButton_7.Script
 	local script = Instance.new('Script', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		local Yourmessage = "the leader of OffizJSTeam (https://www.youtube.com/@luxiagamer) was hacked this game now go surender dumdass 🏴‍☠️☭卐  https://www.roblox.com/games/123069480565403"
+		local Yourmessage = "the leader of OffizJSTeam (https://www.youtube.com/@luxiagamer) was hacked this game now go surender dumbass 🏴‍☠️☭卐  https://www.roblox.com/games/123069480565403"
 	
 		game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Yourmessage)
 	end)
