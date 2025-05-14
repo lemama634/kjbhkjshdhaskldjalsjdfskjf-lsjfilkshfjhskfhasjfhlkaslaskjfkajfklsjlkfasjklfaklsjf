@@ -1,0 +1,650 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+
+-- Properties
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.36793825, 0, 0.228599548, 0)
+Frame.Size = UDim2.new(0, 526, 0, 296)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 3
+TextLabel.Position = UDim2.new(0.133079842, 0, 0.0405405387, 0)
+TextLabel.Size = UDim2.new(0, 369, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Spam sound epik gui"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 14
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1, 0, 0)
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0.102218509, 0, 0.274189293, 0)
+TextButton.Size = UDim2.new(0, 417, 0, 133)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "Spam sound"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 2
+TextLabel_2.Position = UDim2.new(0.209125474, 0, 0.763513505, 0)
+TextLabel_2.Size = UDim2.new(0, 319, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 14
+
+-- Scripts
+
+local function XAMP_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local duration = 999999 -- integer only, no decimals
+		if game:GetService("SoundService").RespectFilteringEnabled then return end
+	
+		local sounds = {}
+	
+		for i,v in pairs(Game:GetDescendants()) do
+			if v:IsA("Sound")  then
+				table.insert(sounds,v)
+			end
+		end
+	
+	
+		local con = Game.DescendantAdded:Connect(function(v)
+			if v:IsA("Sound") then
+				table.insert(sounds,v)
+			end
+		end)
+		wait(.1)
+		local start = math.floor(tick())
+		repeat
+			for i,v in pairs(sounds) do
+				v:Play()
+				v.TimePosition = math.random(0,v.TimeLength * 1000)/1000
+				task.wait()
+			end
+		until math.floor(tick()) == start + duration
+		con:Disconnect()
+	
+		for i,v in pairs(sounds) do
+			v:Stop()
+		end
+	end)
+end
+coroutine.wrap(XAMP_fake_script)()
+local function ECDKYVP_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	local FE = script.Parent
+	while true do
+		wait(0.5)
+		local setting = game:GetService("SoundService").RespectFilteringEnabled
+		if setting == true then
+			FE.TextColor = BrickColor.new(255,0,0)
+			FE.Text ="RespectFilteringEnabled[the sound's FE] is on"
+			print("FE✅")
+		elseif setting == false then
+			FE.Text ="RespectFilteringEnabled[the sound's FE] is off"
+			FE.TextColor = BrickColor.new(255,0,0)
+			print("FE❌")
+		end
+	end
+	
+end
+coroutine.wrap(ECDKYVP_fake_script)()
+local function VUOKHN_fake_script() -- Frame.Script 
+	local script = Instance.new('Script', Frame)
+
+	print("hey faggots this script made by OffizJSTeam")
+	
+end
+coroutine.wrap(VUOKHN_fake_script)()
+local function EFVXKTX_fake_script() -- Frame.Drag Gui Script 
+	local script = Instance.new('LocalScript', Frame)
+
+	function dragify(Main)
+	dragToggle = nil
+	dragSpeed = 0.95 -- You can edit this.
+	dragInput = nil
+	dragStart = nil
+	dragPos = nil
+	
+	function updateInput(input)
+	Delta = input.Position - dragStart
+	Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+	end
+	
+	Main.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+	dragToggle = true
+	dragStart = input.Position
+	startPos = Main.Position
+	input.Changed:Connect(function()
+	if (input.UserInputState == Enum.UserInputState.End) then
+	dragToggle = false
+	end
+	end)
+	end
+	end)
+	
+	Main.InputChanged:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+	dragInput = input
+	end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+	if (input == dragInput and dragToggle) then
+	updateInput(input)
+	end
+	end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(EFVXKTX_fake_script)()
+local function YAONV_fake_script() -- ScreenGui.ScreenGui2Lua 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	
+	--[[ Object Creator ]] --
+	
+	function createObject(className, properties)
+		local instance = Instance.new(className)
+		local parent
+		for propertyName, propertyValue in pairs(properties) do
+			if propertyName ~= "Parent" then
+				instance[propertyName] = propertyValue
+			else
+				parent = propertyValue
+			end
+		end
+		instance.Parent = parent
+		return instance
+	end
+	
+	
+	local ScreenGui = createObject("ScreenGui", {
+		Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"),	ResetOnSpawn = false,	ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+	})
+	local Frame = createObject("Frame", {
+		Parent = ScreenGui,	BackgroundColor3 = Color3.fromRGB(0,170,255),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 0,	Position = UDim2.new(0.36793825030326843,0,0.22859954833984375,0),	Size = UDim2.new(0,526,0,296),
+	})
+	local TextLabel = createObject("TextLabel", {
+		Parent = Frame,	BackgroundColor3 = Color3.fromRGB(85,255,0),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 3,	Position = UDim2.new(0.13307984173297882,0,0.04054053872823715,0),	Size = UDim2.new(0,369,0,50),	Font = Enum.Font.SourceSans,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Regular, Style = Normal },	Text = "Spam sound epik gui",	TextColor3 = Color3.fromRGB(0,0,0),	TextSize = 14,
+	})
+	local TextButton = createObject("TextButton", {
+		Parent = Frame,	BackgroundColor3 = Color3.fromRGB(255,0,0),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 3,	Position = UDim2.new(0.10221850872039795,0,0.274189293384552,0),	Size = UDim2.new(0,417,0,133),	Font = Enum.Font.Unknown,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Bold, Style = Italic },	Text = "Spam sound",	TextColor3 = Color3.fromRGB(0,0,0),	TextScaled = true,	TextSize = 14,	TextWrapped = true,
+	})
+	local LocalScript = createObject("LocalScript", {
+		Parent = TextButton,	Source = "script.Parent.MouseButton1Click:Connect(function()\n	local duration = 999999 -- integer only, no decimals\n	if game:GetService(\"SoundService\").RespectFilteringEnabled then return end\n\n	local sounds = {}\n\n	for i,v in pairs(Game:GetDescendants()) do\n		if v:IsA(\"Sound\")  then\n			table.insert(sounds,v)\n		end\n	end\n\n\n	local con = Game.DescendantAdded:Connect(function(v)\n		if v:IsA(\"Sound\") then\n			table.insert(sounds,v)\n		end\n	end)\n	wait(.1)\n	local start = math.floor(tick())\n	repeat\n		for i,v in pairs(sounds) do\n			v:Play()\n			v.TimePosition = math.random(0,v.TimeLength * 1000)/1000\n			task.wait()\n		end\n	until math.floor(tick()) == start + duration\n	con:Disconnect()\n\n	for i,v in pairs(sounds) do\n		v:Stop()\n	end\nend)",
+	})
+	local TextLabel2 = createObject("TextLabel", {
+		Parent = Frame,	BackgroundColor3 = Color3.fromRGB(255,255,255),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 2,	Position = UDim2.new(0.20912547409534454,0,0.7635135054588318,0),	Size = UDim2.new(0,319,0,50),	Font = Enum.Font.SourceSans,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Regular, Style = Normal },	TextColor3 = Color3.fromRGB(0,0,0),	TextSize = 14,
+	})
+	local LocalScript2 = createObject("LocalScript", {
+		Parent = TextLabel2,	Source = "local FE = script.Parent\nwhile true do\n	wait(0.5)\n	local setting = game:GetService(\"SoundService\").RespectFilteringEnabled\n	if setting == true then\n		FE.TextColor = BrickColor.new(255,0,0)\n		FE.Text =\"RespectFilteringEnabled[the sound's FE] is on\"\n		print(\"FE✅\")\n	elseif setting == false then\n		FE.Text =\"RespectFilteringEnabled[the sound's FE] is off\"\n		FE.TextColor = BrickColor.new(255,0,0)\n		print(\"FE❌\")\n	end\nend\n",
+	})
+	local Script = createObject("Script", {
+		Parent = Frame,	Source = "print(\"hey faggots this script made by OffizJSTeam\")\n",
+	})
+	local Drag_Gui_Script = createObject("LocalScript", {
+		Name = "Drag Gui Script",	Parent = Frame,	Source = "function dragify(Main)\ndragToggle = nil\ndragSpeed = 0.95 -- You can edit this.\ndragInput = nil\ndragStart = nil\ndragPos = nil\n\nfunction updateInput(input)\nDelta = input.Position - dragStart\nPosition = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)\ngame:GetService(\"TweenService\"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()\nend\n\nMain.InputBegan:Connect(function(input)\nif (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then\ndragToggle = true\ndragStart = input.Position\nstartPos = Main.Position\ninput.Changed:Connect(function()\nif (input.UserInputState == Enum.UserInputState.End) then\ndragToggle = false\nend\nend)\nend\nend)\n\nMain.InputChanged:Connect(function(input)\nif (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then\ndragInput = input\nend\nend)\n\ngame:GetService(\"UserInputService\").InputChanged:Connect(function(input)\nif (input == dragInput and dragToggle) then\nupdateInput(input)\nend\nend)\nend\n\ndragify(script.Parent)",
+	})
+	
+	--[[ Scripts ]]--
+	
+	--Script name: LocalScript
+	coroutine.wrap(function()
+		local script = LocalScript
+		script.Parent.MouseButton1Click:Connect(function()
+			local duration = 999999 -- integer only, no decimals
+			if game:GetService("SoundService").RespectFilteringEnabled then return end
+		
+			local sounds = {}
+		
+			for i,v in pairs(Game:GetDescendants()) do
+				if v:IsA("Sound")  then
+					table.insert(sounds,v)
+				end
+			end
+		
+		
+			local con = Game.DescendantAdded:Connect(function(v)
+				if v:IsA("Sound") then
+					table.insert(sounds,v)
+				end
+			end)
+			wait(.1)
+			local start = math.floor(tick())
+			repeat
+				for i,v in pairs(sounds) do
+					v:Play()
+					v.TimePosition = math.random(0,v.TimeLength * 1000)/1000
+					task.wait()
+				end
+			until math.floor(tick()) == start + duration
+			con:Disconnect()
+		
+			for i,v in pairs(sounds) do
+				v:Stop()
+			end
+		end)
+	end)()
+	
+	--Script name: LocalScript2
+	coroutine.wrap(function()
+		local script = LocalScript2
+		local FE = script.Parent
+		while true do
+			wait(0.5)
+			local setting = game:GetService("SoundService").RespectFilteringEnabled
+			if setting == true then
+				FE.TextColor = BrickColor.new(255,0,0)
+				FE.Text ="RespectFilteringEnabled[the sound's FE] is on"
+				print("FE✅")
+			elseif setting == false then
+				FE.Text ="RespectFilteringEnabled[the sound's FE] is off"
+				FE.TextColor = BrickColor.new(255,0,0)
+				print("FE❌")
+			end
+		end
+		
+	end)()
+	
+	--Script name: Drag_Gui_Script
+	coroutine.wrap(function()
+		local script = Drag_Gui_Script
+		function dragify(Main)
+		dragToggle = nil
+		dragSpeed = 0.95 -- You can edit this.
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		
+		function updateInput(input)
+		Delta = input.Position - dragStart
+		Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+		end
+		
+		Main.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+		dragToggle = true
+		dragStart = input.Position
+		startPos = Main.Position
+		input.Changed:Connect(function()
+		if (input.UserInputState == Enum.UserInputState.End) then
+		dragToggle = false
+		end
+		end)
+		end
+		end)
+		
+		Main.InputChanged:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+		dragInput = input
+		end
+		end)
+		
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if (input == dragInput and dragToggle) then
+		updateInput(input)
+		end
+		end)
+		end
+		
+		dragify(script.Parent)
+	end)()
+	
+	
+end
+coroutine.wrap(YAONV_fake_script)()
+local function MAAQCB_fake_script() -- ScreenGui.ScreenGui2Lua 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	
+	--[[ Object Creator ]] --
+	
+	function createObject(className, properties)
+		local instance = Instance.new(className)
+		local parent
+		for propertyName, propertyValue in pairs(properties) do
+			if propertyName ~= "Parent" then
+				instance[propertyName] = propertyValue
+			else
+				parent = propertyValue
+			end
+		end
+		instance.Parent = parent
+		return instance
+	end
+	
+	
+	local ScreenGui = createObject("ScreenGui", {
+		Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"),	ResetOnSpawn = false,	ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+	})
+	local Frame = createObject("Frame", {
+		Parent = ScreenGui,	BackgroundColor3 = Color3.fromRGB(0,170,255),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 0,	Position = UDim2.new(0.36793825030326843,0,0.22859954833984375,0),	Size = UDim2.new(0,526,0,296),
+	})
+	local TextLabel = createObject("TextLabel", {
+		Parent = Frame,	BackgroundColor3 = Color3.fromRGB(85,255,0),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 3,	Position = UDim2.new(0.13307984173297882,0,0.04054053872823715,0),	Size = UDim2.new(0,369,0,50),	Font = Enum.Font.SourceSans,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Regular, Style = Normal },	Text = "Spam sound epik gui",	TextColor3 = Color3.fromRGB(0,0,0),	TextSize = 14,
+	})
+	local TextButton = createObject("TextButton", {
+		Parent = Frame,	BackgroundColor3 = Color3.fromRGB(255,0,0),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 3,	Position = UDim2.new(0.10221850872039795,0,0.274189293384552,0),	Size = UDim2.new(0,417,0,133),	Font = Enum.Font.Unknown,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Bold, Style = Italic },	Text = "Spam sound",	TextColor3 = Color3.fromRGB(0,0,0),	TextScaled = true,	TextSize = 14,	TextWrapped = true,
+	})
+	local LocalScript = createObject("LocalScript", {
+		Parent = TextButton,	Source = "script.Parent.MouseButton1Click:Connect(function()\n	local duration = 999999 -- integer only, no decimals\n	if game:GetService(\"SoundService\").RespectFilteringEnabled then return end\n\n	local sounds = {}\n\n	for i,v in pairs(Game:GetDescendants()) do\n		if v:IsA(\"Sound\")  then\n			table.insert(sounds,v)\n		end\n	end\n\n\n	local con = Game.DescendantAdded:Connect(function(v)\n		if v:IsA(\"Sound\") then\n			table.insert(sounds,v)\n		end\n	end)\n	wait(.1)\n	local start = math.floor(tick())\n	repeat\n		for i,v in pairs(sounds) do\n			v:Play()\n			v.TimePosition = math.random(0,v.TimeLength * 1000)/1000\n			task.wait()\n		end\n	until math.floor(tick()) == start + duration\n	con:Disconnect()\n\n	for i,v in pairs(sounds) do\n		v:Stop()\n	end\nend)",
+	})
+	local TextLabel2 = createObject("TextLabel", {
+		Parent = Frame,	BackgroundColor3 = Color3.fromRGB(255,255,255),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 2,	Position = UDim2.new(0.20912547409534454,0,0.7635135054588318,0),	Size = UDim2.new(0,319,0,50),	Font = Enum.Font.SourceSans,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Regular, Style = Normal },	TextColor3 = Color3.fromRGB(0,0,0),	TextSize = 14,
+	})
+	local LocalScript2 = createObject("LocalScript", {
+		Parent = TextLabel2,	Source = "local FE = script.Parent\nwhile true do\n	wait(0.5)\n	local setting = game:GetService(\"SoundService\").RespectFilteringEnabled\n	if setting == true then\n		FE.TextColor = BrickColor.new(255,0,0)\n		FE.Text =\"RespectFilteringEnabled[the sound's FE] is on\"\n		print(\"FE✅\")\n	elseif setting == false then\n		FE.Text =\"RespectFilteringEnabled[the sound's FE] is off\"\n		FE.TextColor = BrickColor.new(255,0,0)\n		print(\"FE❌\")\n	end\nend\n",
+	})
+	local Script = createObject("Script", {
+		Parent = Frame,	Source = "print(\"hey faggots this script made by OffizJSTeam\")\n",
+	})
+	local Drag_Gui_Script = createObject("LocalScript", {
+		Name = "Drag Gui Script",	Parent = Frame,	Source = "function dragify(Main)\ndragToggle = nil\ndragSpeed = 0.95 -- You can edit this.\ndragInput = nil\ndragStart = nil\ndragPos = nil\n\nfunction updateInput(input)\nDelta = input.Position - dragStart\nPosition = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)\ngame:GetService(\"TweenService\"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()\nend\n\nMain.InputBegan:Connect(function(input)\nif (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then\ndragToggle = true\ndragStart = input.Position\nstartPos = Main.Position\ninput.Changed:Connect(function()\nif (input.UserInputState == Enum.UserInputState.End) then\ndragToggle = false\nend\nend)\nend\nend)\n\nMain.InputChanged:Connect(function(input)\nif (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then\ndragInput = input\nend\nend)\n\ngame:GetService(\"UserInputService\").InputChanged:Connect(function(input)\nif (input == dragInput and dragToggle) then\nupdateInput(input)\nend\nend)\nend\n\ndragify(script.Parent)",
+	})
+	local ScreenGui2Lua = createObject("LocalScript", {
+		Name = "ScreenGui2Lua",	Parent = ScreenGui,	Source = "\n--[[ Object Creator ]] --\n\nfunction createObject(className, properties)\n	local instance = Instance.new(className)\n	local parent\n	for propertyName, propertyValue in pairs(properties) do\n		if propertyName ~= \"Parent\" then\n			instance[propertyName] = propertyValue\n		else\n			parent = propertyValue\n		end\n	end\n	instance.Parent = parent\n	return instance\nend\n\n\nlocal ScreenGui = createObject(\"ScreenGui\", {\n	Parent = game:GetService(\"Players\").LocalPlayer:WaitForChild(\"PlayerGui\"),	ResetOnSpawn = false,	ZIndexBehavior = Enum.ZIndexBehavior.Sibling,\n})\nlocal Frame = createObject(\"Frame\", {\n	Parent = ScreenGui,	BackgroundColor3 = Color3.fromRGB(0,170,255),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 0,	Position = UDim2.new(0.36793825030326843,0,0.22859954833984375,0),	Size = UDim2.new(0,526,0,296),\n})\nlocal TextLabel = createObject(\"TextLabel\", {\n	Parent = Frame,	BackgroundColor3 = Color3.fromRGB(85,255,0),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 3,	Position = UDim2.new(0.13307984173297882,0,0.04054053872823715,0),	Size = UDim2.new(0,369,0,50),	Font = Enum.Font.SourceSans,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Regular, Style = Normal },	Text = \"Spam sound epik gui\",	TextColor3 = Color3.fromRGB(0,0,0),	TextSize = 14,\n})\nlocal TextButton = createObject(\"TextButton\", {\n	Parent = Frame,	BackgroundColor3 = Color3.fromRGB(255,0,0),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 3,	Position = UDim2.new(0.10221850872039795,0,0.274189293384552,0),	Size = UDim2.new(0,417,0,133),	Font = Enum.Font.Unknown,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Bold, Style = Italic },	Text = \"Spam sound\",	TextColor3 = Color3.fromRGB(0,0,0),	TextScaled = true,	TextSize = 14,	TextWrapped = true,\n})\nlocal LocalScript = createObject(\"LocalScript\", {\n	Parent = TextButton,	Source = \"script.Parent.MouseButton1Click:Connect(function()\n	local duration = 999999 -- integer only, no decimals\n	if game:GetService(\\"SoundService\\").RespectFilteringEnabled then return end\n\n	local sounds = {}\n\n	for i,v in pairs(Game:GetDescendants()) do\n		if v:IsA(\\"Sound\\")  then\n			table.insert(sounds,v)\n		end\n	end\n\n\n	local con = Game.DescendantAdded:Connect(function(v)\n		if v:IsA(\\"Sound\\") then\n			table.insert(sounds,v)\n		end\n	end)\n	wait(.1)\n	local start = math.floor(tick())\n	repeat\n		for i,v in pairs(sounds) do\n			v:Play()\n			v.TimePosition = math.random(0,v.TimeLength * 1000)/1000\n			task.wait()\n		end\n	until math.floor(tick()) == start + duration\n	con:Disconnect()\n\n	for i,v in pairs(sounds) do\n		v:Stop()\n	end\nend)\",\n})\nlocal TextLabel2 = createObject(\"TextLabel\", {\n	Parent = Frame,	BackgroundColor3 = Color3.fromRGB(255,255,255),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 2,	Position = UDim2.new(0.20912547409534454,0,0.7635135054588318,0),	Size = UDim2.new(0,319,0,50),	Font = Enum.Font.SourceSans,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Regular, Style = Normal },	TextColor3 = Color3.fromRGB(0,0,0),	TextSize = 14,\n})\nlocal LocalScript2 = createObject(\"LocalScript\", {\n	Parent = TextLabel2,	Source = \"local FE = script.Parent\nwhile true do\n	wait(0.5)\n	local setting = game:GetService(\\"SoundService\\").RespectFilteringEnabled\n	if setting == true then\n		FE.TextColor = BrickColor.new(255,0,0)\n		FE.Text =\\"RespectFilteringEnabled[the sound's FE] is on\\"\n		print(\\"FE✅\\")\n	elseif setting == false then\n		FE.Text =\\"RespectFilteringEnabled[the sound's FE] is off\\"\n		FE.TextColor = BrickColor.new(255,0,0)\n		print(\\"FE❌\\")\n	end\nend\n\",\n})\nlocal Script = createObject(\"Script\", {\n	Parent = Frame,	Source = \"print(\\"hey faggots this script made by OffizJSTeam\\")\n\",\n})\nlocal Drag_Gui_Script = createObject(\"LocalScript\", {\n	Name = \"Drag Gui Script\",	Parent = Frame,	Source = \"function dragify(Main)\ndragToggle = nil\ndragSpeed = 0.95 -- You can edit this.\ndragInput = nil\ndragStart = nil\ndragPos = nil\n\nfunction updateInput(input)\nDelta = input.Position - dragStart\nPosition = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)\ngame:GetService(\\"TweenService\\"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()\nend\n\nMain.InputBegan:Connect(function(input)\nif (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then\ndragToggle = true\ndragStart = input.Position\nstartPos = Main.Position\ninput.Changed:Connect(function()\nif (input.UserInputState == Enum.UserInputState.End) then\ndragToggle = false\nend\nend)\nend\nend)\n\nMain.InputChanged:Connect(function(input)\nif (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then\ndragInput = input\nend\nend)\n\ngame:GetService(\\"UserInputService\\").InputChanged:Connect(function(input)\nif (input == dragInput and dragToggle) then\nupdateInput(input)\nend\nend)\nend\n\ndragify(script.Parent)\",\n})\n\n--[[ Scripts ]]--\n\n--Script name: LocalScript\ncoroutine.wrap(function()\n	local script = LocalScript\n	script.Parent.MouseButton1Click:Connect(function()\n		local duration = 999999 -- integer only, no decimals\n		if game:GetService(\"SoundService\").RespectFilteringEnabled then return end\n	\n		local sounds = {}\n	\n		for i,v in pairs(Game:GetDescendants()) do\n			if v:IsA(\"Sound\")  then\n				table.insert(sounds,v)\n			end\n		end\n	\n	\n		local con = Game.DescendantAdded:Connect(function(v)\n			if v:IsA(\"Sound\") then\n				table.insert(sounds,v)\n			end\n		end)\n		wait(.1)\n		local start = math.floor(tick())\n		repeat\n			for i,v in pairs(sounds) do\n				v:Play()\n				v.TimePosition = math.random(0,v.TimeLength * 1000)/1000\n				task.wait()\n			end\n		until math.floor(tick()) == start + duration\n		con:Disconnect()\n	\n		for i,v in pairs(sounds) do\n			v:Stop()\n		end\n	end)\nend)()\n\n--Script name: LocalScript2\ncoroutine.wrap(function()\n	local script = LocalScript2\n	local FE = script.Parent\n	while true do\n		wait(0.5)\n		local setting = game:GetService(\"SoundService\").RespectFilteringEnabled\n		if setting == true then\n			FE.TextColor = BrickColor.new(255,0,0)\n			FE.Text =\"RespectFilteringEnabled[the sound's FE] is on\"\n			print(\"FE✅\")\n		elseif setting == false then\n			FE.Text =\"RespectFilteringEnabled[the sound's FE] is off\"\n			FE.TextColor = BrickColor.new(255,0,0)\n			print(\"FE❌\")\n		end\n	end\n	\nend)()\n\n--Script name: Drag_Gui_Script\ncoroutine.wrap(function()\n	local script = Drag_Gui_Script\n	function dragify(Main)\n	dragToggle = nil\n	dragSpeed = 0.95 -- You can edit this.\n	dragInput = nil\n	dragStart = nil\n	dragPos = nil\n	\n	function updateInput(input)\n	Delta = input.Position - dragStart\n	Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)\n	game:GetService(\"TweenService\"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()\n	end\n	\n	Main.InputBegan:Connect(function(input)\n	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then\n	dragToggle = true\n	dragStart = input.Position\n	startPos = Main.Position\n	input.Changed:Connect(function()\n	if (input.UserInputState == Enum.UserInputState.End) then\n	dragToggle = false\n	end\n	end)\n	end\n	end)\n	\n	Main.InputChanged:Connect(function(input)\n	if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then\n	dragInput = input\n	end\n	end)\n	\n	game:GetService(\"UserInputService\").InputChanged:Connect(function(input)\n	if (input == dragInput and dragToggle) then\n	updateInput(input)\n	end\n	end)\n	end\n	\n	dragify(script.Parent)\nend)()\n\n",
+	})
+	
+	--[[ Scripts ]]--
+	
+	--Script name: LocalScript
+	coroutine.wrap(function()
+		local script = LocalScript
+		script.Parent.MouseButton1Click:Connect(function()
+			local duration = 999999 -- integer only, no decimals
+			if game:GetService("SoundService").RespectFilteringEnabled then return end
+		
+			local sounds = {}
+		
+			for i,v in pairs(Game:GetDescendants()) do
+				if v:IsA("Sound")  then
+					table.insert(sounds,v)
+				end
+			end
+		
+		
+			local con = Game.DescendantAdded:Connect(function(v)
+				if v:IsA("Sound") then
+					table.insert(sounds,v)
+				end
+			end)
+			wait(.1)
+			local start = math.floor(tick())
+			repeat
+				for i,v in pairs(sounds) do
+					v:Play()
+					v.TimePosition = math.random(0,v.TimeLength * 1000)/1000
+					task.wait()
+				end
+			until math.floor(tick()) == start + duration
+			con:Disconnect()
+		
+			for i,v in pairs(sounds) do
+				v:Stop()
+			end
+		end)
+	end)()
+	
+	--Script name: ScreenGui2Lua
+	coroutine.wrap(function()
+		local script = ScreenGui2Lua
+		
+		--[[ Object Creator ]] --
+		
+		function createObject(className, properties)
+			local instance = Instance.new(className)
+			local parent
+			for propertyName, propertyValue in pairs(properties) do
+				if propertyName ~= "Parent" then
+					instance[propertyName] = propertyValue
+				else
+					parent = propertyValue
+				end
+			end
+			instance.Parent = parent
+			return instance
+		end
+		
+		
+		local ScreenGui = createObject("ScreenGui", {
+			Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"),	ResetOnSpawn = false,	ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+		})
+		local Frame = createObject("Frame", {
+			Parent = ScreenGui,	BackgroundColor3 = Color3.fromRGB(0,170,255),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 0,	Position = UDim2.new(0.36793825030326843,0,0.22859954833984375,0),	Size = UDim2.new(0,526,0,296),
+		})
+		local TextLabel = createObject("TextLabel", {
+			Parent = Frame,	BackgroundColor3 = Color3.fromRGB(85,255,0),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 3,	Position = UDim2.new(0.13307984173297882,0,0.04054053872823715,0),	Size = UDim2.new(0,369,0,50),	Font = Enum.Font.SourceSans,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Regular, Style = Normal },	Text = "Spam sound epik gui",	TextColor3 = Color3.fromRGB(0,0,0),	TextSize = 14,
+		})
+		local TextButton = createObject("TextButton", {
+			Parent = Frame,	BackgroundColor3 = Color3.fromRGB(255,0,0),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 3,	Position = UDim2.new(0.10221850872039795,0,0.274189293384552,0),	Size = UDim2.new(0,417,0,133),	Font = Enum.Font.Unknown,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Bold, Style = Italic },	Text = "Spam sound",	TextColor3 = Color3.fromRGB(0,0,0),	TextScaled = true,	TextSize = 14,	TextWrapped = true,
+		})
+		local LocalScript = createObject("LocalScript", {
+			Parent = TextButton,	Source = "script.Parent.MouseButton1Click:Connect(function()\n	local duration = 999999 -- integer only, no decimals\n	if game:GetService(\"SoundService\").RespectFilteringEnabled then return end\n\n	local sounds = {}\n\n	for i,v in pairs(Game:GetDescendants()) do\n		if v:IsA(\"Sound\")  then\n			table.insert(sounds,v)\n		end\n	end\n\n\n	local con = Game.DescendantAdded:Connect(function(v)\n		if v:IsA(\"Sound\") then\n			table.insert(sounds,v)\n		end\n	end)\n	wait(.1)\n	local start = math.floor(tick())\n	repeat\n		for i,v in pairs(sounds) do\n			v:Play()\n			v.TimePosition = math.random(0,v.TimeLength * 1000)/1000\n			task.wait()\n		end\n	until math.floor(tick()) == start + duration\n	con:Disconnect()\n\n	for i,v in pairs(sounds) do\n		v:Stop()\n	end\nend)",
+		})
+		local TextLabel2 = createObject("TextLabel", {
+			Parent = Frame,	BackgroundColor3 = Color3.fromRGB(255,255,255),	BorderColor3 = Color3.fromRGB(0,0,0),	BorderSizePixel = 2,	Position = UDim2.new(0.20912547409534454,0,0.7635135054588318,0),	Size = UDim2.new(0,319,0,50),	Font = Enum.Font.SourceSans,	FontFace = Font { Family = rbxasset://fonts/families/SourceSansPro.json, Weight = Regular, Style = Normal },	TextColor3 = Color3.fromRGB(0,0,0),	TextSize = 14,
+		})
+		local LocalScript2 = createObject("LocalScript", {
+			Parent = TextLabel2,	Source = "local FE = script.Parent\nwhile true do\n	wait(0.5)\n	local setting = game:GetService(\"SoundService\").RespectFilteringEnabled\n	if setting == true then\n		FE.TextColor = BrickColor.new(255,0,0)\n		FE.Text =\"RespectFilteringEnabled[the sound's FE] is on\"\n		print(\"FE✅\")\n	elseif setting == false then\n		FE.Text =\"RespectFilteringEnabled[the sound's FE] is off\"\n		FE.TextColor = BrickColor.new(255,0,0)\n		print(\"FE❌\")\n	end\nend\n",
+		})
+		local Script = createObject("Script", {
+			Parent = Frame,	Source = "print(\"hey faggots this script made by OffizJSTeam\")\n",
+		})
+		local Drag_Gui_Script = createObject("LocalScript", {
+			Name = "Drag Gui Script",	Parent = Frame,	Source = "function dragify(Main)\ndragToggle = nil\ndragSpeed = 0.95 -- You can edit this.\ndragInput = nil\ndragStart = nil\ndragPos = nil\n\nfunction updateInput(input)\nDelta = input.Position - dragStart\nPosition = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)\ngame:GetService(\"TweenService\"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()\nend\n\nMain.InputBegan:Connect(function(input)\nif (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then\ndragToggle = true\ndragStart = input.Position\nstartPos = Main.Position\ninput.Changed:Connect(function()\nif (input.UserInputState == Enum.UserInputState.End) then\ndragToggle = false\nend\nend)\nend\nend)\n\nMain.InputChanged:Connect(function(input)\nif (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then\ndragInput = input\nend\nend)\n\ngame:GetService(\"UserInputService\").InputChanged:Connect(function(input)\nif (input == dragInput and dragToggle) then\nupdateInput(input)\nend\nend)\nend\n\ndragify(script.Parent)",
+		})
+		
+		--[[ Scripts ]]--
+		
+		--Script name: LocalScript
+		coroutine.wrap(function()
+			local script = LocalScript
+			script.Parent.MouseButton1Click:Connect(function()
+				local duration = 999999 -- integer only, no decimals
+				if game:GetService("SoundService").RespectFilteringEnabled then return end
+			
+				local sounds = {}
+			
+				for i,v in pairs(Game:GetDescendants()) do
+					if v:IsA("Sound")  then
+						table.insert(sounds,v)
+					end
+				end
+			
+			
+				local con = Game.DescendantAdded:Connect(function(v)
+					if v:IsA("Sound") then
+						table.insert(sounds,v)
+					end
+				end)
+				wait(.1)
+				local start = math.floor(tick())
+				repeat
+					for i,v in pairs(sounds) do
+						v:Play()
+						v.TimePosition = math.random(0,v.TimeLength * 1000)/1000
+						task.wait()
+					end
+				until math.floor(tick()) == start + duration
+				con:Disconnect()
+			
+				for i,v in pairs(sounds) do
+					v:Stop()
+				end
+			end)
+		end)()
+		
+		--Script name: LocalScript2
+		coroutine.wrap(function()
+			local script = LocalScript2
+			local FE = script.Parent
+			while true do
+				wait(0.5)
+				local setting = game:GetService("SoundService").RespectFilteringEnabled
+				if setting == true then
+					FE.TextColor = BrickColor.new(255,0,0)
+					FE.Text ="RespectFilteringEnabled[the sound's FE] is on"
+					print("FE✅")
+				elseif setting == false then
+					FE.Text ="RespectFilteringEnabled[the sound's FE] is off"
+					FE.TextColor = BrickColor.new(255,0,0)
+					print("FE❌")
+				end
+			end
+			
+		end)()
+		
+		--Script name: Drag_Gui_Script
+		coroutine.wrap(function()
+			local script = Drag_Gui_Script
+			function dragify(Main)
+			dragToggle = nil
+			dragSpeed = 0.95 -- You can edit this.
+			dragInput = nil
+			dragStart = nil
+			dragPos = nil
+			
+			function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+			end
+			
+			Main.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = Main.Position
+			input.Changed:Connect(function()
+			if (input.UserInputState == Enum.UserInputState.End) then
+			dragToggle = false
+			end
+			end)
+			end
+			end)
+			
+			Main.InputChanged:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			dragInput = input
+			end
+			end)
+			
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if (input == dragInput and dragToggle) then
+			updateInput(input)
+			end
+			end)
+			end
+			
+			dragify(script.Parent)
+		end)()
+		
+		
+	end)()
+	
+	--Script name: LocalScript2
+	coroutine.wrap(function()
+		local script = LocalScript2
+		local FE = script.Parent
+		while true do
+			wait(0.5)
+			local setting = game:GetService("SoundService").RespectFilteringEnabled
+			if setting == true then
+				FE.TextColor = BrickColor.new(255,0,0)
+				FE.Text ="RespectFilteringEnabled[the sound's FE] is on"
+				print("FE✅")
+			elseif setting == false then
+				FE.Text ="RespectFilteringEnabled[the sound's FE] is off"
+				FE.TextColor = BrickColor.new(255,0,0)
+				print("FE❌")
+			end
+		end
+		
+	end)()
+	
+	--Script name: Drag_Gui_Script
+	coroutine.wrap(function()
+		local script = Drag_Gui_Script
+		function dragify(Main)
+		dragToggle = nil
+		dragSpeed = 0.95 -- You can edit this.
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		
+		function updateInput(input)
+		Delta = input.Position - dragStart
+		Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+		end
+		
+		Main.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+		dragToggle = true
+		dragStart = input.Position
+		startPos = Main.Position
+		input.Changed:Connect(function()
+		if (input.UserInputState == Enum.UserInputState.End) then
+		dragToggle = false
+		end
+		end)
+		end
+		end)
+		
+		Main.InputChanged:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+		dragInput = input
+		end
+		end)
+		
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if (input == dragInput and dragToggle) then
+		updateInput(input)
+		end
+		end)
+		end
+		
+		dragify(script.Parent)
+	end)()
+	
+	
+end
+coroutine.wrap(MAAQCB_fake_script)()
